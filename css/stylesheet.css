@@ -1,0 +1,23 @@
+body{
+   
+    background-color: sandybrown;
+}
+#headerSectoin{
+    padding: 5px;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+#drop{
+    padding: 10px;
+    border-radius: 5px;
+    width: 15%;
+}
+#loginbtn{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+}

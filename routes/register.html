@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title> Online Voting System</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+    <style>
+        #adrs{
+         width: 30%;
+        }
+        #pw{
+            width: 30%;
+           }
+        
+        #role{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+        #role select{
+            border-radius: 5px;
+            padding: 10px;
+        }
+     </style>
+     <center>
+        <div id="headerDection">
+            <h1>Online Voting System</h1>
+         </div>
+        
+        <hr>
+       <div id="bodySection">
+        <h2>Register</h2>
+        <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Name">
+        <input type="number" name="mobile" placeholder="Mobile number"><br><br>
+        <input id="pw" type="password" name="password" placeholder="Password"><br><br>
+        
+        <input id="adrs" type="text" name="address" placeholder="Address"><br><br>
+    <center>
+       
+        <div id="role"> 
+            Select role: <select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select>
+        </div><br><br>
+        
+    </center>
+        <button type="submit" style=" padding: 5px;
+                        border-radius: 5px;
+                        font-size: 15px;
+                        background-color: blue;
+                        color: white;">Register</button><br><br>
+         Already User?<a href="../">Login Here</a>
+    </form>
+       </div>
+     </center>
+        
+</body>
+</html>
